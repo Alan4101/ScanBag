@@ -5,11 +5,32 @@
 body{
     font-size: 16px;
 }
-ul{
+ul, ol, p{
     margin: 0;
     padding: 0;
 }
 .wrapper{
     font-family: $fontMonrope;
     width: $maxWidthContainer;
+}
+/*----------------------ALL TITLE*/
+.head__title{
+    font-family: $fontMonrope;
+    font-weight: 800;
+    font-size: 40px;
+}
+/*------------------------footer + header - install app */
+.get-app-icon{
+    display: inline-block;
+    width: 129px;
+    height: 39px;
+}
+.icon-playmarket{
+    background: url('/img/googleolay.png');
+    background-repeat: no-repeat;
+    
+}
+.icon-appstore{
+    background: url('/img/appstore_icon.png');
+    background-repeat: no-repeat;
 }
