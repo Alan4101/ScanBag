@@ -1,0 +1,15 @@
+@import 'fonts';
+@import 'variable';
+@import 'header';
+
+body{
+    font-size: 16px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    font-family: $fontMonrope;
+    width: $maxWidthContainer;
+}

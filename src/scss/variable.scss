@@ -1,0 +1,14 @@
+
+$fontMonrope: 'Manrope', sans-serif;
+/*------*/
+$linkColor: #489273;
+/*------*/
+$minWidth: 320px;
+$maxWidthContainer: 1420px;
+/*------*/
+%flex-dir-jus-ali{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
