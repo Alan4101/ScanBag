@@ -1,0 +1,22 @@
+
+.sb-icon{
+    color: $iconsColor;
+    display: block;
+    background-size: 20px;
+    width: 30px;
+    height: inherit;
+}
+
+.sb-location{
+    background-image: url('/img/icons/location_icon.svg');
+    background-repeat: no-repeat;
+    
+}
+.sb-phone{
+    background-image: url('/img/icons/phone_icon.svg');
+    background-repeat: no-repeat;
+}
+.sb-letter{
+    background-image: url('/img/icons/letter_icon.svg');
+    background-repeat: no-repeat;
+}

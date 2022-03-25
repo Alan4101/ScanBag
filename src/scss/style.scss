@@ -1,36 +1,73 @@
-@import 'fonts';
-@import 'variable';
-@import 'header';
 
 body{
     font-size: 16px;
+    // background-color: #E5E5E5 !important;
 }
 ul, ol, p{
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+
+}
+@import 'fonts';
+@import 'variable';
+@import 'icons';
+@import 'header';
+@import 'first_page';
+
+@import 'contact';
+@import 'footer';
+
+
+.main_content{
+    width: 100%;
 }
 .wrapper{
     font-family: $fontMonrope;
     width: $maxWidthContainer;
+    margin: 0 auto;
 }
 /*----------------------ALL TITLE*/
-.head__title{
+.head__title>.title{
     font-family: $fontMonrope;
     font-weight: 800;
     font-size: 40px;
+    margin-bottom: 4.5rem;
 }
+/*-----------------------BUTTONS*/
+.sb-btn{
+    width: 210px;
+    height: 50px;
+    font-family: $fontMonrope;
+    font-weight: 800;
+    font-size: 16px;
+}
+.sb-btn-grean{
+    background-color: #489273;
+    border-radius: 10px;
+    border: none;
+    color: #fff;
+}
+.sb-btn-black{
+
+}
+/*------------------------------*/
 /*------------------------footer + header - install app */
 .get-app-icon{
     display: inline-block;
-    width: 129px;
+    width: 127px;
     height: 39px;
-}
-.icon-playmarket{
-    background: url('/img/googleolay.png');
-    background-repeat: no-repeat;
+    border-radius: 5px;
+    margin: 0 2px;
     
 }
-.icon-appstore{
-    background: url('/img/appstore_icon.png');
+.icon-playmarket{
+    background: url('/img/GooglePlayBadge.svg');
     background-repeat: no-repeat;
+    background-size: cover;
+}
+.icon-appstore{
+    background: url("/img/AppStoreBadge.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 }

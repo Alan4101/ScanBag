@@ -1,0 +1,44 @@
+/*contact*/
+.contact__container{
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    .contact__information{
+        .info-block{
+            @extend %flex-dir-jus-ali;
+            background: #FFFFFF;
+            box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
+            border-radius: 10px;
+            margin: .8rem 0;
+            padding: 2em 3.1em;
+            text-align: start;
+            font-family: $fontMonrope;
+
+            &__icon{
+                width: 10%;
+                height: 30px;
+                display: flex;
+                align-items: center;
+            }
+            &__name{
+                width: 30%;
+                font-size: 20px;
+                font-weight: 800;
+            }
+            &__descriptions{
+                width: 70%;
+                font-size: 16px;
+                font-weight: 400;
+
+            }
+        }
+    }
+    .contact__form{
+        box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
+        border-radius: 10px;
+        margin: .8rem 0;
+        .contact__form-container{
+
+        }
+    }
+} 
