@@ -5,6 +5,10 @@
     text-align: center;
 
     .contact__information{
+        .information__adress{
+            padding-top: 2rem !important;
+            padding-bottom: 2rem !important;
+        }
         .info-block{
             @extend %flex-dir-jus-ali;
             @extend %contact-block;
@@ -19,11 +23,13 @@
                 align-items: center;
             }
             &__name{
+                margin-left: 2rem !important;
                 width: 30%;
                 font-size: 20px;
                 font-weight: 800;
             }
             &__descriptions{
+                margin-left: 3rem !important;
                 width: 70%;
                 font-size: 16px;
                 font-weight: 400;
