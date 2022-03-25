@@ -3,14 +3,12 @@
     margin: 0 auto;
     width: 100%;
     text-align: center;
+
     .contact__information{
         .info-block{
             @extend %flex-dir-jus-ali;
-            background: #FFFFFF;
-            box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
-            border-radius: 10px;
-            margin: .8rem 0;
-            padding: 2em 3.1em;
+            @extend %contact-block;
+            padding: 3.1rem;
             text-align: start;
             font-family: $fontMonrope;
 
@@ -34,11 +32,72 @@
         }
     }
     .contact__form{
-        box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
-        border-radius: 10px;
-        margin: .8rem 0;
+        @extend %contact-block;
+        padding:0 5.6rem;
+        margin-left: 1rem;
+        width: calc(66% - 1rem);
         .contact__form-container{
+            padding: 2rem 0;
+            .contact__field{
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: start;
+                padding-bottom: 22px;
+                label{
+                    color: #767676;
+                    font-family: $fontMonrope;
+                    font-weight: 600;
+                    padding-bottom: 5px;
+                }
+                textarea{
+                    height: 100px;
+                }
+                .contact-input{
+                    box-sizing: border-box;
+                    border: 1px solid  #E3C161;
+                    box-shadow: inset 1px 1px 0px rgba(0, 0, 0, 0.24);
+                    border-radius: 10px;
+                    font-size: 20px;
+                    padding: 10px 16px;
+                    
+                    outline: none;
+                    transition: box-shadow .1s;
+                    padding-bottom: 5px;
+                   
+                    &:focus{
+                        box-shadow: 0 0 0 2px rgb(228, 191, 90);
+                    }
+                }
+            }
+            .contact__field:last-child{
+                padding-bottom: 0;
+            }
+            .contact__field-two{
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                padding-bottom: 0;
+                .contact__field:nth-child(1){
+                    margin-right: 1rem;
+                }
+                .contact__field:nth-child(2){
+                    margin-left: 1rem;
+                }
+                .contact__field{
+                    width: 100%;
 
+                }
+                
+            }
+            
         }
     }
 } 
+%contact-block{
+    background: #FFFFFF;
+    box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
+    border-radius: 10px;
+    margin-top: .8rem;
+    margin-bottom: .8rem;
+}
