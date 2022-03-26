@@ -1,7 +1,5 @@
-
 body{
     font-size: 16px;
-    // background-color: #E5E5E5 !important;
 }
 ul, ol, p{
     margin: 0 !important;
@@ -13,7 +11,10 @@ ul, ol, p{
 @import 'icons';
 @import 'header';
 @import 'first_page';
-
+@import 'secondpage';
+@import 'aboutapp';
+@import 'feedback';
+@import 'faq';
 @import 'contact';
 @import 'footer';
 
@@ -23,7 +24,8 @@ ul, ol, p{
 }
 .wrapper{
     font-family: $fontMonrope;
-    width: $maxWidthContainer;
+    max-width: $maxWidthContainer;
+    width: 100%;
     margin: 0 auto;
 }
 /*----------------------ALL TITLE*/
@@ -33,6 +35,14 @@ ul, ol, p{
     font-size: 40px;
     margin-bottom: 4.5rem;
 }
+.text-links{
+    color: #489273;
+    text-decoration: none;
+    &:hover{
+        text-decoration: dotted;
+        color: #2a5744;
+    }
+}
 /*-----------------------BUTTONS*/
 .sb-btn{
     width: 210px;
@@ -40,17 +50,29 @@ ul, ol, p{
     font-family: $fontMonrope;
     font-weight: 800;
     font-size: 16px;
-}
-.sb-btn-grean{
-    background-color: #489273;
     border-radius: 10px;
     border: none;
+    outline: none;
     color: #fff;
-}
-.sb-btn-black{
+    &:focus{
+        box-shadow: 0 0 0 2px #3f8065;
+    }
 
 }
+.sb-btn-green{
+    background-color: #489273;
+    
+}
+.sb-btn-black{
+    background-color: #000;
+}
 /*------------------------------*/
+
+/*-----secound section + about---*/
+.item-picture{}
+.item-description{}
+
+/*-------------------------------*/
 /*------------------------footer + header - install app */
 .get-app-icon{
     display: inline-block;
