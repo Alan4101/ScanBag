@@ -6,7 +6,9 @@ ul, ol, p{
     padding: 0 !important;
 
 }
-@import 'fonts';
+@import url(https://fonts.googleapis.com/css?family=Manrope:300,regular,700,800);
+
+// @import 'fonts';
 @import 'variable';
 @import 'icons';
 @import 'header';
@@ -28,11 +30,16 @@ ul, ol, p{
     width: 100%;
     margin: 0 auto;
 }
+.pd-1rem{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 /*----------------------ALL TITLE*/
 .head__title>.title{
     font-family: $fontMonrope;
     font-weight: 800;
     font-size: 40px;
+    font-style: normal;
     margin-bottom: 4.5rem;
 }
 .text-links{

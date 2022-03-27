@@ -3,11 +3,14 @@
     margin: 0 auto;
     width: 100%;
     text-align: center;
+    margin-bottom: 6.25rem;
+    
     .faq-section__wrapper{
         .faq-section__accordion{
             margin-top: 3.5rem;
             .accordion{
                 font-family: $fontMonrope !important;
+                font-style: normal;
 
                 .accordion-item{
                     background: #FFFFFF;
@@ -15,24 +18,45 @@
                     border: none;
                     margin-bottom: 1rem;
                     outline: none;
-                    
+                    border-radius: 20px;
                     .accordion-header{
                         
-                        box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
-                        .accordion-button{
-                            font-weight: 800 !important;
-                            font-size: 20px !important;
+                        .accordion-button-sb{
+                            position: relative;
+                            display: flex;
+                            width: 100%;
+                            font-weight: 800;
+                            font-size: 20px;
                             padding: 2rem;
                             border: none;
-                            &::after{
-                                filter: invert(0.5) sepia(1) saturate(0) hue-rotate(0deg);
+                            background-color: #FFFFFF;
+                            border-radius: 10px ;
+                            text-align: start;
+                            line-height: 24px;
+
+                            &:after{
+                                flex-shrink: 0;
+                                width: 1.25rem;
+                                height: 1.25rem;
+                                margin-left: auto;
+                                content: "";
                                 background-image: url('/img/icons/arrov.svg') !important;
+
+                                background-repeat: no-repeat;
+                                background-size: 1.25rem;
+                                transition: transform .2s ease-in-out;
                             }
                             &:focus{
                                 box-shadow: none;
                             }
                         }
-                        .accordion-button:not(.collapsed){
+                        
+                        .accordion-button-sb:not(.collapsed)::after {
+                            filter: invert(0.5) sepia(1) saturate(0) hue-rotate(0deg);
+                            background-image: url('/img/icons/arrov.svg') !important;
+                            transform: rotate(-180deg);
+                        }
+                        .accordion-button-sb:not(.collapsed){
                             color: black !important;
                             background-color: #FFFFFF !important;
                         }
@@ -42,10 +66,14 @@
                         text-align: start;
                         font-size: 16px;
                         font-weight: 400;
-                        box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
+                        padding: 2rem;
+                        padding-top:0;
                     }
                 }
             }
+        }
+        .faq-section__btn{
+            margin-top: 2.6rem;
         }
     }
 }
