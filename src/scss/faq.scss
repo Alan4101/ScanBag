@@ -1,0 +1,51 @@
+.faq-section__container{
+    max-width: 930px;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+    .faq-section__wrapper{
+        .faq-section__accordion{
+            margin-top: 3.5rem;
+            .accordion{
+                font-family: $fontMonrope !important;
+
+                .accordion-item{
+                    background: #FFFFFF;
+                    box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
+                    border: none;
+                    margin-bottom: 1rem;
+                    outline: none;
+                    
+                    .accordion-header{
+                        
+                        box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
+                        .accordion-button{
+                            font-weight: 800 !important;
+                            font-size: 20px !important;
+                            padding: 2rem;
+                            border: none;
+                            &::after{
+                                filter: invert(0.5) sepia(1) saturate(0) hue-rotate(0deg);
+                                background-image: url('/img/icons/arrov.svg') !important;
+                            }
+                            &:focus{
+                                box-shadow: none;
+                            }
+                        }
+                        .accordion-button:not(.collapsed){
+                            color: black !important;
+                            background-color: #FFFFFF !important;
+                        }
+                    }
+
+                    .accordion-body{
+                        text-align: start;
+                        font-size: 16px;
+                        font-weight: 400;
+                        box-shadow: 2px 2px 12px rgba(67, 94, 85, 0.2);
+                    }
+                }
+            }
+        }
+    }
+}
