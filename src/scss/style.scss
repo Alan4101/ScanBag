@@ -76,8 +76,18 @@ ul, ol, p{
 /*------------------------------*/
 
 /*-----secound section + about---*/
-.item-picture{}
-.item-description{}
+.item-picture{
+    // width: calc(58.33% - 2rem);
+    width: 58.33%;
+
+    // max-width: 100%;
+}
+.item-decription{
+    // max-width: 100%;
+    width:41.33%;
+    // width: calc(41.33% - 2rem) ;
+
+}
 
 /*-------------------------------*/
 /*------------------------footer + header - install app */
@@ -99,4 +109,12 @@ ul, ol, p{
     background-repeat: no-repeat;
     background-size: cover;
     
+}
+@media (max-width: 1024px){
+    .item-picture{
+        flex: 0 0 100%;
+    }
+    .item-decription{
+        flex: 0 0 100%;    
+    }
 }

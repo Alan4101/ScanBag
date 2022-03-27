@@ -1,10 +1,25 @@
-.about-section__container{
-    &__wrapper{
-        &__row{
+.about-section{
+    margin-top: 6.25rem;
+    .about-section__wrapper{
+        .about-section__row{
+            display: flex; 
+            flex-direction: row; 
+            flex-wrap: wrap;          
             /*text*/
-            &__item{
-                &__descr{}
-                &__get-app{}
+            .about-section__item{
+                .head__title>.title{
+                    margin-bottom: 3.4rem;
+                }
+                .about-section__descr{
+                    margin-bottom: 3.4rem;
+
+                }
+                .about-section__get-app{
+                }
+                .section__img{
+                    object-fit: contain;
+                    width: 100%;
+                }
             }
             /*slider*/
             &__slider{
