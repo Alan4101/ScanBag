@@ -30,10 +30,7 @@ ul, ol, p{
     width: 100%;
     margin: 0 auto;
 }
-.pd-1rem{
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
+
 /*----------------------ALL TITLE*/
 .head__title>.title{
     font-family: $fontMonrope;
@@ -45,6 +42,8 @@ ul, ol, p{
 .text-links{
     color: #489273;
     text-decoration: none;
+    font-family: $fontMonrope;
+    font-weight: 700;
     &:hover{
         text-decoration: dotted;
         color: #2a5744;
@@ -73,20 +72,42 @@ ul, ol, p{
 .sb-btn-black{
     background-color: #000;
 }
+.sb-img{
+    object-fit: contain;
+    width: 100%;
+}
 /*------------------------------*/
 
 /*-----secound section + about---*/
-.item-picture{
-    // width: calc(58.33% - 2rem);
-    width: 58.33%;
 
-    // max-width: 100%;
+.sb-row{
+    display: flex; 
+    flex-direction: row; 
+    flex-wrap: wrap; 
+    
+
 }
-.item-decription{
-    // max-width: 100%;
+.sb-col-7{
+    width: 58.33%;
+}
+.sb-col-5{
     width:41.33%;
-    // width: calc(41.33% - 2rem) ;
-
+}
+.sb-col-4{
+    width:33.33%;
+}
+.pd-1rem{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+.pd-l-1rem{
+    padding-left: 1rem;
+}
+.pd-r-1rem{
+    padding-right: 1rem;
+}
+.md-top-1rem{
+    margin-top: 1rem;
 }
 
 /*-------------------------------*/
@@ -111,10 +132,32 @@ ul, ol, p{
     
 }
 @media (max-width: 1024px){
-    .item-picture{
+    .sb-col-5{
         flex: 0 0 100%;
     }
-    .item-decription{
+    .sb-col-7{
         flex: 0 0 100%;    
     }
+    .pd-l-1rem{
+        padding-left: 0;
+    }
+    .pd-r-1rem{
+        padding-right: 0;
+    }
+    
+}
+@media (max-width: 1024px) and (min-width:768px){
+    .sb-img-mobile{
+        flex: 0 0 50%;
+        margin: 0 auto;
+    }
+    // .sb-col-4{
+    //     flex: 0 0 100%;
+    // }
+   
+}
+@media (max-width:768px){
+    .sb-col-4{
+            flex: 0 0 100%;
+        }
 }

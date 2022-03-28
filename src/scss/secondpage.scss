@@ -1,9 +1,65 @@
+.second__section, .sb-card{
+    margin-top: 6.3rem;
+}
 .second__section{
     .section__wrapper{
-       &__item{
-
+       .section__item{
+            font-family: $fontMonrope;
+            font-style: normal;
+            font-size: 16px;
+            font-weight: 400;
+            .sb-row{
+                margin-left: -1rem;
+                margin-right: -1rem;
+            }
        } 
-       .item-picture{}
-       .item-description{}
+       .sb-card{
+            text-align: center;
+            &__block{
+                .sb-card__container{
+                    margin: 0 1rem;
+                    padding: 2rem;
+                    background: #FFFFFF;
+                    box-shadow: 2px 2px 39px rgba(66, 74, 72, 0.2);
+                    border-radius: 10px;
+                    .sb-card__title{
+                        padding-bottom: 1.7rem;
+                        h4{
+                            font-size: 22px;
+                            font-weight: 700;
+                        }
+                    }
+                    
+                }
+                  
+            }
+            &__text{
+                height: 135px;
+                text-align: justify;
+            }
+            &__icon{
+                margin: 0 auto;
+            }
+           
+       }
+       
     }
+}
+.section__descr,.sb-card__text{
+    line-height: 19.2px;
+}
+.section__descr,.section__item{
+    margin-bottom: 3.4rem;
+}
+@media (max-width:1024px){
+    .sb-card__block{
+        .sb-card__container{
+            // margin: 0 !important;
+        }
+    }
+    
+}
+@media (max-width:768px){
+    
+    
 }

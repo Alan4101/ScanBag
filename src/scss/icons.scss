@@ -2,21 +2,38 @@
 .sb-icon{
     color: $iconsColor;
     display: block;
-    background-size: 100% 100%;
-    width: 30px;
-    height: inherit;
+    height: 100px;
+    
 }
 
 .sb-location{
-    background-image: url('/img/icons/location_icon.svg');
-    background-repeat: no-repeat;
-    
+    background: url('/img/icons/location_icon.svg') no-repeat center;
+    background-position: 50% 50%;
+    width: 100%;
 }
 .sb-phone{
-    background-image: url('/img/icons/phone_icon.svg');
-    background-repeat: no-repeat;
+    background: url('/img/icons/phone_icon.svg') no-repeat center;
+    background-position: 50% 50%;
+    width: 100%;
+
+
 }
 .sb-letter{
-    background-image: url('/img/icons/letter_icon.svg');
-    background-repeat: no-repeat;
+    background: url('/img/icons/letter_icon.svg') no-repeat center;
+    background-position: 50% 50%;
+    width: 100%;
+
+}
+.sb-edit{
+    background: url('/img/icons/edit_icon.svg') no-repeat center;
+    background-position: 50% 50%;
+    
+}
+.sb-download{
+    background: url('/img/icons/download_icon.svg') no-repeat center;
+    background-position: 50% 50%;
+}
+.sb-basket{
+    background: url('/img/icons/basket_icon.svg') no-repeat center;
+    background-position: 50% 50%;
 }
