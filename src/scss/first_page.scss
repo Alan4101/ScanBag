@@ -1,9 +1,41 @@
 .first-page__content{
     width: 100%;
-    height: calc(100vh - 162px);
-    .first-page__top{
+    // height: calc(100vh - 162px);
+    height: 100vh;
+
+
+    .first-page{
         height: inherit;
         background: url('/img/bg/firstpage_bg.png') no-repeat;
         background-size: cover;
+        &__wrapper{
+            font-family: $fontMonrope;
+            padding-top: 6.25rem;
+            h1{
+                max-width: 850px;
+                width: 100%;
+                font-size: 50px;
+                font-weight: 800;
+                font-style: normal;
+                line-height: 60px;
+                
+            }
+            .first-page_text{
+                margin-top: 2.6rem !important;
+                max-width: 675px;
+                width: 100%;
+                font-size: 16px;
+                font-weight: 700;
+                line-height: 19.2px;
+            }
+            .first-page__btn{
+                margin-top: 2.6rem;
+                .sb-btn:first-child{
+                    margin-right: 25px;
+                }
+            }
+        
+        }
+        
     }
 }

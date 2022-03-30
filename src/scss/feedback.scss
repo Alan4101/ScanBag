@@ -1,15 +1,129 @@
-.feedback-section__container {
+.feedback-section {
     margin-bottom: 10rem;
     &__wrapper {
+        text-align: center;
+        .head__title>.title{
+            margin-bottom: 20px !important;
+        }
     }
 
     &__slider-container {
+        height: 541px;
         background: url('/img/bg/feedback_sct_bg.png') no-repeat;
-        background-size: contain;
+        background-size: cover;
         .slider-container {
+            padding: 5rem 0 1.6rem 0;
+            .swiper{
+                padding: 29px;
+                width: inherit;
+                height: 345px;
+                .slider-item{
+                    padding: 3.75rem 1rem;
+
+                    background: #FFFFFF;
+                    border-radius: 10px;
+                    font-family: $fontMonrope;
+
+                    line-height: 19.2px;
+                    .rating_wrapper{
+                        width: 100%;
+                        position: relative;
+                        display: flex;
+                        justify-content: center;
+                        margin-bottom: 20px;
+
+                    }
+                    .rating-slider{
+                        margin: 0 auto;
+                        height: 27px;
+                        &:not(:checked) > input {
+                            position:absolute;
+                            top:-9999px;
+                        }
+                        &:not(:checked) > label {
+                            float:right;
+                            width:1em;
+                            overflow:hidden;
+                            white-space:nowrap;
+                            cursor:pointer;
+                            font-size:30px;
+                            color:#ccc;
+                        }
+                        &:not(:checked) > label:before {
+                            content: url('/img/icons/star_not_fill.svg');
+                        }
+                        &:not(:checked) > label:hover::before {
+                            content: url('/img/icons/star_fiil.svg');
+                        }
+                        
+                    }
+                    .rating-slider > input:checked ~ label::before {
+                        content: url('/img/icons/star_fiil.svg');
+                    }
+                    
+                    .rating-slider > input:checked + label:hover::before,
+                    .rating-slider > input:checked + label:hover::before ~ label::before,
+                    .rating-slider > input:checked ~ label:hover::before,
+                    .rating-slider > input:checked ~ label:hover::before ~ label::before,
+                    .rating-slider > label:hover::before ~ input:checked ~ label::before {
+                        content: url('/img/icons/star_fiil.svg');
+                        
+                    }
+                   
+                    
+                    .text-slider{
+                        font-style: normal;
+                        font-size: 16px;
+                        font-weight: 400;
+                        margin-bottom: 3.1rem;
+                    }
+                    .questions-slider{
+                        font-weight: 800;
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
+                } 
+                .swiper-pagination-feedback{
+                    .swiper-pagination-bullet{
+                        background-color: #FFFFFF;
+                        opacity: 1;
+                        border: 2px solid transparent;
+                        outline: none;
+                    }
+                    .swiper-pagination-bullet-active{
+                        background-color: transparent;
+                        border: 2px solid #FFFFFF;
+                        transition: all .2s cubic-bezier(0.215, 0.610, 0.355, 1);
+                        outline: none;
+                        &:focus{
+                            background-color: transparent;
+                        border: 2px solid #FFFFFF;
+                        transition: all .2s cubic-bezier(0.215, 0.610, 0.355, 1);
+                        }
+                    }
+                }
+                .swiper-button-next::after, .swiper-button-prev::after {
+                    content: "";
+                }
+                .swiper-button-prev{
+                    background: url('/img/icons/arrov_slider.png') no-repeat !important;
+                    transform: rotate(180deg);
+                    left: -10px;
+                    outline: none;
+                }
+                .swiper-button-next{
+                    right: -10px;
+                    background: url('/img/icons/arrov_slider.png') no-repeat !important;
+                    outline: none;
+
+                }   
+            }
+            .feedback-section__btn {
+                margin-top: 34px;
+            }
+            
         }
-        .feedbac-section__btn {
-        }
+        
     }
 
 }

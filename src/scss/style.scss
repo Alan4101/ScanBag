@@ -67,7 +67,10 @@ ul, ol, p{
 }
 .sb-btn-green{
     background-color: #489273;
-    
+    transition: all .5s linear;
+    &:hover{
+        background: rgba(228, 194, 96, 0.8);
+    }
 }
 .sb-btn-black{
     background-color: #000;
