@@ -36,11 +36,14 @@
                     .rating-slider{
                         margin: 0 auto;
                         height: 27px;
-                        &:not(:checked) > input {
+                         
+                        &:not(:checked)  >.input-slider {
                             position:absolute;
-                            top:-9999px;
+                            // top:-9999px;
+                            visibility: hidden;
+                            // display: none;
                         }
-                        &:not(:checked) > label {
+                        &:not(:checked) > .lable-slider {
                             float:right;
                             width:1em;
                             overflow:hidden;
@@ -49,28 +52,27 @@
                             font-size:30px;
                             color:#ccc;
                         }
-                        &:not(:checked) > label:before {
+                        &:not(:checked)  .lable-slider:before {
                             content: url('/img/icons/star_not_fill.svg');
                         }
-                        &:not(:checked) > label:hover::before {
+                        &:not(:checked)  .lable-slider:hover::before {
                             content: url('/img/icons/star_fiil.svg');
                         }
                         
                     }
-                    .rating-slider > input:checked ~ label::before {
+                    .rating-slider > .input-slider:checked ~ .lable-slider::before {
                         content: url('/img/icons/star_fiil.svg');
                     }
                     
-                    .rating-slider > input:checked + label:hover::before,
-                    .rating-slider > input:checked + label:hover::before ~ label::before,
-                    .rating-slider > input:checked ~ label:hover::before,
-                    .rating-slider > input:checked ~ label:hover::before ~ label::before,
-                    .rating-slider > label:hover::before ~ input:checked ~ label::before {
+                    .rating-slider > input.input-slider:checked + .lable-slider:hover::before,
+                    .rating-slider > input.input-slider:checked + .lable-slider:hover::before ~ .lable-slider::before,
+                    .rating-slider > input.input-slider:checked ~ .lable-slider:hover::before,
+                    .rating-slider > input.input-slider:checked ~ .lable-slider:hover::before ~ .lable-slider::before,
+                    .rating-slider > .lable-slider:hover::before ~ input:checked ~ .lable-slider::before {
                         content: url('/img/icons/star_fiil.svg');
                         
                     }
                    
-                    
                     .text-slider{
                         font-style: normal;
                         font-size: 16px;
